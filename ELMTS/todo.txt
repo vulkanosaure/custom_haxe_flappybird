@@ -1,0 +1,65 @@
+layout, initialisation au chargement 										OK
+	ptet 1er event resize en 1er,
+	ptet LayoutManager.init
+	systeme de file d'attente tout simplement
+	
+	
+click touch																	OK
+
+tester sur android															OK
+	mettre en place un accès local
+	
+
+layout screen_end															OK
+	
+	
+	
+
+police affichage															OK
+	chopper sur le net
+	tenter un bitmapfont maison
+	on prend la mm, on ajoute ombre portée pour le compteur
+	probleme d'outline : soit l'intégrer ds photoshop, soit en filtre
+	
+
+system de transition
+	goto screen_end											OK
+	test callback goto										OK
+	d'ou vient ce delay naturel								OK
+	possibilité de delay le moment du changement			OK
+	test clickableConflict  
+	lance screenblip en callback
+	
+		
+fx.ScreenBlip												OK
+	color
+	trouver un moyen de lui fournir les dimensions
+	timein, timeon, timeout
+	
+
+game
+	écran de jeu direct, pas perdre de tps avec l'intro, on adaptera
+	flappy anim
+	flappy méchanique
+	systeme de tuyau + camera
+	physique (nape ?)
+	
+	
+Sound
+	voir ce qui existe, ne pas forcément recréer la roue
+
+	
+detection touchable / platform ...
+
+
+
+
+
+
+
+______________________________________________________________________
+GENERIC
+
+integration entre ObjectSearch.regsiter et LayoutManager.addItem ?
+
+

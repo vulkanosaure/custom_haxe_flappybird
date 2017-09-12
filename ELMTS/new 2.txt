@@ -1,0 +1,26 @@
+pour etre au top du générisme,
+
+jvais pas tout encapsuler ds un lourd systeme de caméra, qui ne laisse pas trop de liberté
+j'risque d'en arriver a un gros framework mega interdependant
+
+but, ici : construire des petites briques utilisable INDEPENDEMMENT
+
+______________________________________________________
+
+
+on ne va pas du tout mettre en place de camera,
+
+GameItemFactory
+	with Interface pour création / destruction
+	on lui file une classe en paramètre pour qu'elle crée ?
+	ou bien elle dispatch un evenement... ?
+	
+	selon quelles règles elle va créer... ?
+	ca suppose une sorte de "curseur", de "camera"
+		on peut etre horizontal / ou vertical
+		on peut meme avoir des jeux en 3D 
+	on ne va pas lui donner de type de coordonnée, on utilise une prop générique : progress
+	progress démarre a 0, puis augmente (vitesse constante de 1)
+	
+	progress est un curseur, une sorte de position camera
+	faut définir une first step également, car on laisse tjs un peu de tps au démarrage
