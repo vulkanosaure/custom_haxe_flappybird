@@ -28,7 +28,7 @@ class ControllerHome extends ControllerBase
 		trace("ControllerHome.onclick(" + _id + ")");
 		
 		if (_id == "btnrate") {
-			
+			@:keep untyped __js__("clickRate()");
 		}
 		else if (_id == "btnplay") {
 			
@@ -37,9 +37,11 @@ class ControllerHome extends ControllerBase
 		}
 		else if (_id == "btnrank") {
 			//Navigation.gotoScreen("", "screen_end");
-			
+			@:keep untyped __js__("clickRanking()");
+			/*
 			var _controllerRanking:ControllerRanking = cast(MVCRoot.getController("screen_ranking"), ControllerRanking);
 			_controllerRanking.onClickRanking();
+			*/
 		}
 		
 	}

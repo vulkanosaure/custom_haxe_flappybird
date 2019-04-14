@@ -57,6 +57,12 @@ class Main extends Sprite
 		stage.align = StageAlign.TOP_LEFT;
 		
 		this.stage.addEventListener(Event.RESIZE, LayoutManager.onResize, false, Max.INT_MAX_VALUE, true);
+		/*
+		var sp:Sprite = new Sprite();
+		sp.graphics.beginFill(0xFF0000);
+		sp.graphics.drawCircle(20, 20, 20);
+		this.addChild(sp);
+		*/
         
 		
         Starling.multitouchEnabled = true; // for Multitouch Scene

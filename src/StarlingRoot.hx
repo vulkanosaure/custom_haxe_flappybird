@@ -19,7 +19,6 @@ import openfl.display.Stage;
 import openfl.geom.Point;
 import openfl.ui.Keyboard;
 import openfl.utils.Object;
-import ru.stablex.ui.UIBuilder;
 import starling.core.Starling;
 import starling.display.Image;
 import starling.display.Sprite;
@@ -58,10 +57,9 @@ class StarlingRoot extends Sprite
 		});
 		*/
 		
-		UIBuilder.init();
         
         //addEventListener(Event.TRIGGERED, onButtonTriggered);
-        this.stage.addEventListener(KeyboardEvent.KEY_DOWN, onKey);
+        //this.stage.addEventListener(KeyboardEvent.KEY_DOWN, onKey);
 		
 		Vars.starlingStage = __starling.stage;
 		Vars.openflstage = _openflstage;
@@ -287,10 +285,12 @@ class StarlingRoot extends Sprite
 	
     private function onKey(event:KeyboardEvent):Void
     {
+		
         if (event.keyCode == Keyboard.SPACE)
             Starling.current.showStats = !Starling.current.showStats;
         else if (event.keyCode == Keyboard.X)
             Starling.current.context.dispose();
+		
     }
 	
 }

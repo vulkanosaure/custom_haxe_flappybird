@@ -18,9 +18,6 @@ import openfl.text.TextField;
 import openfl.text.TextFieldType;
 import openfl.text.TextFormat;
 import openfl.text.TextFormatAlign;
-import ru.stablex.ui.UIBuilder;
-import ru.stablex.ui.widgets.InputText;
-import ru.stablex.ui.widgets.Text;
 import ui.GameButton;
 
 
@@ -100,65 +97,6 @@ class ViewInput extends ViewBase
 		
 		
 		
-		
-		/*
-		_tf = new TextField();
-		_tf.type = TextFieldType.INPUT;
-		//_tf.border = true;
-		//_tf.borderColor = 0x000000;
-		_tf.width = 288;
-		_tf.height = 38;
-		_tf.y = 3;
-		_textformat = new TextFormat();
-		_textformat.align = TextFormatAlign.CENTER;
-		_textformat.font = "Arial";
-		_textformat.size = 28;
-		
-		_tf.addEventListener(TextEvent.TEXT_INPUT, onTextInput);
-		_tf.setTextFormat(_textformat);
-		_tf.maxChars = 10;
-		*/
-		
-		
-		/*
-		var _input:InputElement = document.createInputElement();
-		_input.width = 288;
-		_input.height = 38;
-		_input.id = "input_name";
-		document.querySelector("#openfl-content").appendChild(_input);
-		*/
-		
-		var _textformat:TextFormat = new TextFormat("Arial", 28);
-		
-		var widget = UIBuilder.create(InputText, {
-			text : 'My first widget!',
-			format : _textformat,
-			w : 288,
-			h : 43,
-			align:"center,middle", 
-			
-		});
-		var _tf:InputText = cast(widget, InputText);
-		
-		var _it:InputText;
-		
-		Vars.openflstage.addChild(widget);
-		
-		
-		//center, arial, size
-		
-		_fscontainer = new FlashStarlingContainer();
-		_fscontainer.addChild(_tf);
-		Vars.openflstage.addChild(_fscontainer);
-		_fscontainer.sync(_containerInput, Vars.starlingStage);
-		
-		
-		LayoutManager.addResizeLister(function():Void {
-			_fscontainer.sync(_containerInput, Vars.starlingStage);
-		});
-		
-		
-		
 	}
 	
 	private function onTextInput(e:TextEvent):Void 
@@ -168,7 +106,7 @@ class ViewInput extends ViewBase
 	
 	public function setInputVisible(_value:Bool) :Void
 	{
-		_fscontainer.visible = _value;
+		//_fscontainer.visible = _value;
 	}
 	
 	public function getInput():String

@@ -21,6 +21,8 @@ class ScoreText extends LayoutSprite
 		_tf = new TextField(150, 50, "", "font_score", 36, 0xFFFFFF);
 		_tf.hAlign = HAlign.RIGHT;
 		this.addChild(_tf);
+		
+		//this.addChild(
 		//_tf.border = true;
 		
 		

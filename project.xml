@@ -6,10 +6,9 @@
 	<meta title="FLAPPY_BIRD" package="FLAPPYBIRD" version="1.0.0" company="Vincent Huss" />
 	
 	<!-- output -->
-	<app main="Main" file="FLAPPYBIRD" path="bin" />
+	<app main="Main" file="FLAPPYBIRD" path="bin" preloader="Preloader" />
 	
 	<window background="#000000" fps="60" />
-	<!--<window width="480" height="800" unless="mobile" />-->
 	<window orientation="portrait" vsync="false" antialiasing="0" if="cpp" />
 	
 	<!-- classpath, haxe libs -->
@@ -18,7 +17,6 @@
 	<haxelib name="actuate" />
 	<haxelib name="starling" />
 	<haxelib name="nape" />
-	<haxelib name="stablexui" />
 	
 	<compilerflag name="-swf-version" value="11.8" if="flash" />
 	
@@ -32,5 +30,6 @@
 	
 	<!-- optimize output
 	<haxeflag name="-dce full" /> -->
+	<config:html5 output-directory="../HTML/bin-haxe" />
 	
 </project>

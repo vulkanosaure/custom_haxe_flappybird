@@ -1,0 +1,9 @@
+manage SRC
+git
+find query volumes around flappy bird
+decide exact match domain
+how reference page
+write original content about flappy bird ?
+pub a social share module (already made)
+analytics
+pub ?
